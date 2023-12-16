@@ -1,0 +1,27 @@
+.notfound {
+    padding-top: 60px;
+    h1 {
+        margin-bottom: 32px;
+        text-align: center;
+    }
+    .btn {
+        width: 100%;
+        max-width: 380px;
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__img {
+        max-width: 967px;
+    }
+    @media (max-width: $bp1) {
+        .btn {
+            max-width: 320px;
+        }
+    }
+    @media (max-width: $bp4) {
+        padding-top: 40px;
+    }
+}

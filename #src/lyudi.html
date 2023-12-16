@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+@@include('_head.html', {   
+    "title": "Наши люди"
+})
+
+<body>
+    <div class="wrap">
+        <!--header-->
+        @@include('_header.html')
+        <!--main-->  
+        <main class="main">
+            @@include('_breadcrumbs.html', {
+                "page": "Наши люди"
+            })
+            <!--about-->
+            <section class="section about about--employees">
+                <div class="container">
+                    <!--about content-->
+                    <div class="about__content">
+                        <!--page-hero-->
+                        <div class="mb-60 page-hero">
+                            <div class="page-hero__inner">
+                                <h1>Наши люди</h1>
+                                <div class="page-hero__preview">
+                                    <img src="img/mission-bg.jpg" alt="Наши люди">
+                                </div>  
+                            </div>
+                        </div>
+                        <div class="about__employees">
+                            @@include('_item-employee.html', {"nmb": "1"})
+                            @@include('_item-employee.html', {"nmb": "2"})
+                            @@include('_item-employee.html', {"nmb": "3"})
+                            @@include('_item-employee.html', {"nmb": "2"})
+                            @@include('_item-employee.html', {"nmb": "1"})
+                            @@include('_item-employee.html', {"nmb": "2"})
+                            @@include('_item-employee.html', {"nmb": "3"})
+                            @@include('_item-employee.html', {"nmb": "1"})
+                            @@include('_item-employee.html', {"nmb": "2"})
+                        </div>
+                    </div>
+                    <!--about sticky-->
+                    <div class="about__sticky">
+                        <nav>
+                            <span>Об организации</span>
+                            <ul>
+                                <li><a href="#">Миссия и ценности</a></li>
+                                <li><a href="#">Наша история</a></li>
+                                <li><a href="#">Партнеры</a></li>
+                                <li class="active"><a href="#">Наши люди</a></li>
+                                <li><a href="#">Фотогалерея</a></li>
+                                <li><a href="#">Пресса о нас</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </section>
+        </main>
+         <!--footer-->
+        @@include('_footer.html')
+        @@include('_modal.html')
+    </div>
+    @@include('_js.html')
+</body>
+
+</html>

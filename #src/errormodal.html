@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+@@include('_head.html', {
+"title": "Страница не найдена"
+})
+
+<body>
+    <div class="wrap">
+        <!--header-->
+        @@include('_header.html')
+        <!--main-->
+        <main class="main">
+            <!--notfound-->
+            <section class="section notfound">
+                <div class="container">
+                    <div class="mb-60 notfound__img">
+                        <img src="img/notfound.png" alt="Cтраница не найдена">
+                    </div>
+                    <h1>Упс, страница не найдена!</h1>
+                    <a href="/" class="btn main-btn">На главную</a>
+                </div>
+            </section>
+        </main>
+        <!--footer-->
+        @@include('_footer.html')
+        <!--success-modal-->
+        <div class="modal success-modal">
+            <div class="modal__overlay">
+                <div class="modal__content">
+                    <button class="modal__close" aria-label="Закрыть всплывающее окно">
+                        <svg>
+                            <use xlink:href="img/icons/sprite.svg#icon-close"></use>
+                        </svg>
+                    </button>
+                    <img src="img/success-bg.png" alt="Заявка отправлена">
+                    <h2>Спасибо!</h2>
+                    <p>Заявка отправлена</p>
+                </div>
+            </div>
+        </div>
+        <!--error-modal-->
+        <div class="modal error-modal open">
+            <div class="modal__overlay">
+                <div class="modal__content">
+                    <button class="modal__close" aria-label="Закрыть всплывающее окно">
+                        <svg>
+                            <use xlink:href="img/icons/sprite.svg#icon-close"></use>
+                        </svg>
+                    </button>
+                    <img src="img/error-bg.png" alt="Заявка не отправилась">
+                    <h2>Ошибка</h2>
+                    <p>Заявка не отправилась, попробуйте снова</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    @@include('_js.html')
+</body>
+
+</html>

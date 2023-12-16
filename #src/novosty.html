@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+@@include('_head.html', {   
+    "title": "Новости"
+})
+
+<body>
+    <div class="wrap">
+        <!--header-->
+        @@include('_header.html')
+        <!--main-->  
+        <main class="main">
+            @@include('_breadcrumbs.html', {
+                "page": "Новости"
+            })
+            <!--news-->
+            <section class="section news">
+                <div class="container">
+                    <h1 class="mb-60">Новости</h1>
+                    <!--news-top-->
+                    <div class="news__top">
+                        <form class="news__form" onsubmit="event.preventDefault();newsFormSubmit(this)">
+                            <span class="news__lbl">Проекты:</span>
+                            <div class="select-custom">
+                                <div class="select-custom__selected"><span>Вcе</span></div>
+                                <div class="select-custom__body">
+                                    <label class="item-checkbox all">
+                                        <input type="checkbox" checked>
+                                        <span>Все</span>
+                                    </label>
+                                    <label class="item-checkbox">
+                                        <input type="checkbox" checked>
+                                        <span>И стар, и млад - в добровольческий отряд!</span>
+                                    </label>
+                                    <label class="item-checkbox">
+                                        <input type="checkbox" checked>
+                                        <span>Робофутбол для особых детей</span>
+                                    </label>
+                                    <label class="item-checkbox">
+                                        <input type="checkbox" checked>
+                                        <span>Серебряный круг</span>
+                                    </label>
+                                    <div class="select-custom__footer">
+                                        <button disabled type="submit">Применить</button>
+                                        <button disabled type="reset">Сбросить</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                        <div class="news__tabs">
+                            <span class="news__lbl">Показать:</span>
+                            <div class="tabs">
+                                <a data-order="default" class="active" href="#">По умолчанию</a>
+                                <a data-order="asc" href="#">Сначала новые</a>
+                                <a data-order="desc" href="#">Сначала старые</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--news__items-->
+                    <div class="mb-60 news__items">
+                        @@include("_item-news.html", {"nmb":"1","tag":"Робофутбол для особых детей","txt":"«Зимний хакатон» - играют роботы и дети"})
+                        @@include("_item-news.html", {"nmb":"2","tag":"Серебряный круг","txt":"Региональный конкурс «Серебряный наставник» открывает двери для старшего поколения"})
+                        @@include("_item-news.html", {"nmb":"3","tag":"И стар, и млад - в добровольческий отряд!","txt":"«Зимний хакатон» - играют роботы и дети"})
+                        @@include("_item-news.html", {"nmb":"1","tag":"Робофутбол для особых детей","txt":"«Зимний хакатон» - играют роботы и дети"})
+                        @@include("_item-news.html", {"nmb":"2","tag":"Серебряный круг","txt":"Региональный конкурс «Серебряный наставник» открывает двери для старшего поколения"})
+                        @@include("_item-news.html", {"nmb":"3","tag":"И стар, и млад - в добровольческий отряд!","txt":"«Зимний хакатон» - играют роботы и дети"})
+                        @@include("_item-news.html", {"nmb":"1","tag":"Робофутбол для особых детей","txt":"«Зимний хакатон» - играют роботы и дети"})
+                        @@include("_item-news.html", {"nmb":"2","tag":"Серебряный круг","txt":"Региональный конкурс «Серебряный наставник» открывает двери для старшего поколения"})
+                        @@include("_item-news.html", {"nmb":"3","tag":"И стар, и млад - в добровольческий отряд!","txt":"«Зимний хакатон» - играют роботы и дети"})
+                        @@include("_item-news.html", {"nmb":"1","tag":"Робофутбол для особых детей","txt":"«Зимний хакатон» - играют роботы и дети"})
+                        @@include("_item-news.html", {"nmb":"2","tag":"Серебряный круг","txt":"Региональный конкурс «Серебряный наставник» открывает двери для старшего поколения"})
+                        @@include("_item-news.html", {"nmb":"3","tag":"И стар, и млад - в добровольческий отряд!","txt":"«Зимний хакатон» - играют роботы и дети"})
+                    </div>
+                    <!--pagination-->
+                    <nav class="pagination">
+                        <a class="current" href="#">1</a>
+                        <a href="#">2</a>
+                        <a href="#">3</a>
+                        <a href="#">4</a>
+                        <span>...</span>
+                        <a href="#">10</a>
+                    </nav>
+                </div>
+            </section>
+        </main>
+         <!--footer-->
+        @@include('_footer.html')
+        @@include('_modal.html')
+    </div>
+    @@include('_js.html')
+</body>
+
+</html>

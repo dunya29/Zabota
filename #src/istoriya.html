@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+@@include('_head.html', {   
+    "title": "Наша история"
+})
+
+<body>
+    <div class="wrap">
+        <!--header-->
+        @@include('_header.html')
+        <!--main-->  
+        <main class="main">
+            @@include('_breadcrumbs.html', {
+                "page": "Наша история"
+            })
+            <!--about-->
+            <section class="section about about--history">
+                <div class="container">
+                    <div class="about__content">
+                        <!--page-hero-->
+                        <div class="mb-60 page-hero">
+                            <div class="page-hero__inner">
+                                <h1>Наша история</h1>
+                                <div class="page-hero__preview">
+                                    <img src="img/mission-bg.jpg" alt="Наша история">
+                                </div>  
+                            </div>
+                        </div>
+                        <div class="page-content">
+                            <div class="about__history">
+                                <div class="item-history">
+                                    <div class="item-history__year"><span>2005г</span></div>
+                                    <div class="item-history__content">
+                                        <h3>Создание фонда</h3>
+                                        <p>Деятельность любой некоммерческой организации должна быть законной и прозрачной. Жертвуя на нашем сайте, вы можете быть уверены, что ваши деньги дойдут до благополучателей и не попадут в руки мошенников.</p>
+                                    </div>
+                                </div>
+                                <div class="item-history">
+                                    <div class="item-history__year"><span>2008г</span></div>
+                                    <div class="item-history__content">
+                                        <h3>Создание фонда</h3>
+                                        <p>Заключен договор о долгосрочном сотрудничестве с государственным университетом им. Н.А.Лобачевского, Нижегородским губернским колледжем, школой 118 и другими образовательными учреждениями.</p>
+                                        <p>НРБОО «Забота» активный участник реализации государственной социальной политики в Нижегородском регионе, развивает социальное партнерство со структурами власти, бизнеса, общественным сектором, СМИ.</p>
+                                    </div>
+                                </div>
+                                <div class="item-history">
+                                    <div class="item-history__year"><span>2023г</span></div>
+                                    <div class="item-history__content">
+                                        <h3>Создание фонда</h3>
+                                        <p>Деятельность любой некоммерческой организации должна быть законной и прозрачной. Жертвуя на нашем сайте, вы можете быть уверены, что ваши деньги дойдут до благополучателей и не попадут в руки мошенников.</p>
+                                    </div>
+                                </div>
+                                <div class="item-history">
+                                    <div class="item-history__year"><span>2026г</span></div>
+                                    <div class="item-history__content">
+                                        <h3>Создание фонда</h3>
+                                        <p>Деятельность любой некоммерческой организации должна быть законной и прозрачной. Жертвуя на нашем сайте, вы можете быть уверены, что ваши деньги дойдут до благополучателей и не попадут в руки мошенников.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--about-sticky-->
+                    <div class="about__sticky">
+                        <nav>
+                            <span>Об организации</span>
+                            <ul>
+                                <li><a href="#">Миссия и ценности</a></li>
+                                <li class="active"><a href="#">Наша история</a></li>
+                                <li><a href="#">Партнеры</a></li>
+                                <li><a href="#">Наши люди</a></li>
+                                <li><a href="#">Фотогалерея</a></li>
+                                <li><a href="#">Пресса о нас</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </section>
+        </main>
+         <!--footer-->
+        @@include('_footer.html')
+        @@include('_modal.html')
+    </div>
+    @@include('_js.html')
+</body>
+
+</html>

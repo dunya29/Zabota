@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link type="image/x-icon" rel="shortcut icon" href="img/favicon/favicon.ico">
+    <link type="image/png" sizes="32x32" rel="icon" href="img/favicon/favicon-32x32.png">
+    <link type="image/png" sizes="192x192" rel="icon" href="img/favicon/android-chrome-192x192.png">
+    <link sizes="120x120" rel="apple-touch-icon" href="img/favicon/apple-icon-120x120.png">
+    <link sizes="180x180" rel="apple-touch-icon" href="img/favicon/apple-icon-180x180.png">
+    <meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="preload" href="fonts/FiraSans-Regular.woff2" as="font" type="font/woff2" crossorigin> 
+    <link href="css/style.min.css" type="text/css" rel="stylesheet">
+    <title>Новости</title>
+</head>
+
+<body>
+    <div class="wrap">
+        <!--header-->
+        <header class="header">
+    <div class="container">
+        <a href="/" class="header__logo"><picture><source srcset="img/logo.webp" type="image/webp"><img src="img/logo.png" alt="Благотворительная организация ЗАБОТА"></picture></a>
+        <div class="icon-menu">
+            <span class="icon-menu__lbl">Меню</span>
+            <div class="icon-menu__items">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div class="header__menu">
+            <nav class="menu">
+                <ul class="menu__list">
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">
+                            Об организации
+                            <svg>
+                                <use xlink:href="img/icons/sprite.svg#chevron-drop"></use>
+                            </svg>
+                        </a>
+                        <ul class="menu__subnavs">
+                            <li><a href="#">Миссия и ценности</a></li>
+                            <li><a href="#">Наша история</a></li>
+                            <li><a href="#">Партнеры</a></li>
+                            <li><a href="#">Наши люди</a></li>
+                            <li><a href="#">Фотогалерея</a></li>
+                            <li><a href="#">Пресса о нас</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu__item"><a href="#" class="menu__link">Проекты</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link">Услуги</a></li>
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">
+                            Документы                        
+                            <svg>
+                                <use xlink:href="img/icons/sprite.svg#chevron-drop"></use>
+                            </svg>
+                        </a>
+                        <ul class="menu__subnavs">
+                            <li><a href="#">Все документы</a></li>
+                            <li><a href="#">Отчеты</a></li>
+                            <li><a href="#">Файлы</a></li>
+                            <li><a href="#">Благотворительная программа</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu__item"><a href="#" class="menu__link">Новости</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link">Фотогалерея</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+        <a href="#footer" class="btn stroke-btn js-anchor header__btn">Пожертвовать<svg><use xlink:href="img/icons/sprite.svg#heart"></use></svg></a>
+    </div>
+</header>
+        <!--main-->  
+        <main class="main">
+            <!--breadcrumbs-->
+<div class="mb-60 breadcrumbs"">
+    <div class="container">
+        <ul>
+            <li><a href="#">Главная</a></li>
+            <li>Новости</li>
+        </ul>
+    </div>
+</div>
+            <!--news-->
+            <section class="section news">
+                <div class="container">
+                    <h1 class="mb-60">Новости</h1>
+                    <!--news-top-->
+                    <div class="news__top">
+                        <form class="news__form" onsubmit="event.preventDefault();newsFormSubmit(this)">
+                            <span class="news__lbl">Проекты:</span>
+                            <div class="select-custom">
+                                <div class="select-custom__selected"><span>Вcе</span></div>
+                                <div class="select-custom__body">
+                                    <label class="item-checkbox all">
+                                        <input type="checkbox" checked>
+                                        <span>Все</span>
+                                    </label>
+                                    <label class="item-checkbox">
+                                        <input type="checkbox" checked>
+                                        <span>И стар, и млад - в добровольческий отряд!</span>
+                                    </label>
+                                    <label class="item-checkbox">
+                                        <input type="checkbox" checked>
+                                        <span>Робофутбол для особых детей</span>
+                                    </label>
+                                    <label class="item-checkbox">
+                                        <input type="checkbox" checked>
+                                        <span>Серебряный круг</span>
+                                    </label>
+                                    <div class="select-custom__footer">
+                                        <button disabled type="submit">Применить</button>
+                                        <button disabled type="reset">Сбросить</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                        <div class="news__tabs">
+                            <span class="news__lbl">Показать:</span>
+                            <div class="tabs">
+                                <a data-order="default" class="active" href="#">По умолчанию</a>
+                                <a data-order="asc" href="#">Сначала новые</a>
+                                <a data-order="desc" href="#">Сначала старые</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--news__items-->
+                    <div class="mb-60 news__items">
+                        <!--item-news-->
+<article class="item-news">
+    <a href="#" class="media-cover"><picture><source srcset="img/news-1.webp" type="image/webp"><img src="img/news-1.jpg" alt="Робофутбол для особых детей"></picture></a>
+    <div class="item-news__content">
+        <div class="item-news__tags">
+            <span>Робофутбол для особых детей</span>
+        </div>
+        <span class="item-news__date">21.04.2023</span>
+        <h5>«Зимний хакатон» - играют роботы и дети</h5>
+        <a href="#" class="btn main-link">Читать<svg><use xlink:href="img/icons/sprite.svg#arrow-sm"></use></svg></a>
+    </div>
+</article>
+                        <!--item-news-->
+<article class="item-news">
+    <a href="#" class="media-cover"><picture><source srcset="img/news-2.webp" type="image/webp"><img src="img/news-2.jpg" alt="Серебряный круг"></picture></a>
+    <div class="item-news__content">
+        <div class="item-news__tags">
+            <span>Серебряный круг</span>
+        </div>
+        <span class="item-news__date">21.04.2023</span>
+        <h5>Региональный конкурс «Серебряный наставник» открывает двери для старшего поколения</h5>
+        <a href="#" class="btn main-link">Читать<svg><use xlink:href="img/icons/sprite.svg#arrow-sm"></use></svg></a>
+    </div>
+</article>
+                        <!--item-news-->
+<article class="item-news">
+    <a href="#" class="media-cover"><picture><source srcset="img/news-3.webp" type="image/webp"><img src="img/news-3.jpg" alt="И стар, и млад - в добровольческий отряд!"></picture></a>
+    <div class="item-news__content">
+        <div class="item-news__tags">
+            <span>И стар, и млад - в добровольческий отряд!</span>
+        </div>
+        <span class="item-news__date">21.04.2023</span>
+        <h5>«Зимний хакатон» - играют роботы и дети</h5>
+        <a href="#" class="btn main-link">Читать<svg><use xlink:href="img/icons/sprite.svg#arrow-sm"></use></svg></a>
+    </div>
+</article>
+                        <!--item-news-->
+<article class="item-news">
+    <a href="#" class="media-cover"><picture><source srcset="img/news-1.webp" type="image/webp"><img src="img/news-1.jpg" alt="Робофутбол для особых детей"></picture></a>
+    <div class="item-news__content">
+        <div class="item-news__tags">
+            <span>Робофутбол для особых детей</span>
+        </div>
+        <span class="item-news__date">21.04.2023</span>
+        <h5>«Зимний хакатон» - играют роботы и дети</h5>
+        <a href="#" class="btn main-link">Читать<svg><use xlink:href="img/icons/sprite.svg#arrow-sm"></use></svg></a>
+    </div>
+</article>
+                        <!--item-news-->
+<article class="item-news">
+    <a href="#" class="media-cover"><picture><source srcset="img/news-2.webp" type="image/webp"><img src="img/news-2.jpg" alt="Серебряный круг"></picture></a>
+    <div class="item-news__content">
+        <div class="item-news__tags">
+            <span>Серебряный круг</span>
+        </div>
+        <span class="item-news__date">21.04.2023</span>
+        <h5>Региональный конкурс «Серебряный наставник» открывает двери для старшего поколения</h5>
+        <a href="#" class="btn main-link">Читать<svg><use xlink:href="img/icons/sprite.svg#arrow-sm"></use></svg></a>
+    </div>
+</article>
+                        <!--item-news-->
+<article class="item-news">
+    <a href="#" class="media-cover"><picture><source srcset="img/news-3.webp" type="image/webp"><img src="img/news-3.jpg" alt="И стар, и млад - в добровольческий отряд!"></picture></a>
+    <div class="item-news__content">
+        <div class="item-news__tags">
+            <span>И стар, и млад - в добровольческий отряд!</span>
+        </div>
+        <span class="item-news__date">21.04.2023</span>
+        <h5>«Зимний хакатон» - играют роботы и дети</h5>
+        <a href="#" class="btn main-link">Читать<svg><use xlink:href="img/icons/sprite.svg#arrow-sm"></use></svg></a>
+    </div>
+</article>
+                        <!--item-news-->
+<article class="item-news">
+    <a href="#" class="media-cover"><picture><source srcset="img/news-1.webp" type="image/webp"><img src="img/news-1.jpg" alt="Робофутбол для особых детей"></picture></a>
+    <div class="item-news__content">
+        <div class="item-news__tags">
+            <span>Робофутбол для особых детей</span>
+        </div>
+        <span class="item-news__date">21.04.2023</span>
+        <h5>«Зимний хакатон» - играют роботы и дети</h5>
+        <a href="#" class="btn main-link">Читать<svg><use xlink:href="img/icons/sprite.svg#arrow-sm"></use></svg></a>
+    </div>
+</article>
+                        <!--item-news-->
+<article class="item-news">
+    <a href="#" class="media-cover"><picture><source srcset="img/news-2.webp" type="image/webp"><img src="img/news-2.jpg" alt="Серебряный круг"></picture></a>
+    <div class="item-news__content">
+        <div class="item-news__tags">
+            <span>Серебряный круг</span>
+        </div>
+        <span class="item-news__date">21.04.2023</span>
+        <h5>Региональный конкурс «Серебряный наставник» открывает двери для старшего поколения</h5>
+        <a href="#" class="btn main-link">Читать<svg><use xlink:href="img/icons/sprite.svg#arrow-sm"></use></svg></a>
+    </div>
+</article>
+                        <!--item-news-->
+<article class="item-news">
+    <a href="#" class="media-cover"><picture><source srcset="img/news-3.webp" type="image/webp"><img src="img/news-3.jpg" alt="И стар, и млад - в добровольческий отряд!"></picture></a>
+    <div class="item-news__content">
+        <div class="item-news__tags">
+            <span>И стар, и млад - в добровольческий отряд!</span>
+        </div>
+        <span class="item-news__date">21.04.2023</span>
+        <h5>«Зимний хакатон» - играют роботы и дети</h5>
+        <a href="#" class="btn main-link">Читать<svg><use xlink:href="img/icons/sprite.svg#arrow-sm"></use></svg></a>
+    </div>
+</article>
+                        <!--item-news-->
+<article class="item-news">
+    <a href="#" class="media-cover"><picture><source srcset="img/news-1.webp" type="image/webp"><img src="img/news-1.jpg" alt="Робофутбол для особых детей"></picture></a>
+    <div class="item-news__content">
+        <div class="item-news__tags">
+            <span>Робофутбол для особых детей</span>
+        </div>
+        <span class="item-news__date">21.04.2023</span>
+        <h5>«Зимний хакатон» - играют роботы и дети</h5>
+        <a href="#" class="btn main-link">Читать<svg><use xlink:href="img/icons/sprite.svg#arrow-sm"></use></svg></a>
+    </div>
+</article>
+                        <!--item-news-->
+<article class="item-news">
+    <a href="#" class="media-cover"><picture><source srcset="img/news-2.webp" type="image/webp"><img src="img/news-2.jpg" alt="Серебряный круг"></picture></a>
+    <div class="item-news__content">
+        <div class="item-news__tags">
+            <span>Серебряный круг</span>
+        </div>
+        <span class="item-news__date">21.04.2023</span>
+        <h5>Региональный конкурс «Серебряный наставник» открывает двери для старшего поколения</h5>
+        <a href="#" class="btn main-link">Читать<svg><use xlink:href="img/icons/sprite.svg#arrow-sm"></use></svg></a>
+    </div>
+</article>
+                        <!--item-news-->
+<article class="item-news">
+    <a href="#" class="media-cover"><picture><source srcset="img/news-3.webp" type="image/webp"><img src="img/news-3.jpg" alt="И стар, и млад - в добровольческий отряд!"></picture></a>
+    <div class="item-news__content">
+        <div class="item-news__tags">
+            <span>И стар, и млад - в добровольческий отряд!</span>
+        </div>
+        <span class="item-news__date">21.04.2023</span>
+        <h5>«Зимний хакатон» - играют роботы и дети</h5>
+        <a href="#" class="btn main-link">Читать<svg><use xlink:href="img/icons/sprite.svg#arrow-sm"></use></svg></a>
+    </div>
+</article>
+                    </div>
+                    <!--pagination-->
+                    <nav class="pagination">
+                        <a class="current" href="#">1</a>
+                        <a href="#">2</a>
+                        <a href="#">3</a>
+                        <a href="#">4</a>
+                        <span>...</span>
+                        <a href="#">10</a>
+                    </nav>
+                </div>
+            </section>
+        </main>
+         <!--footer-->
+        <footer class="footer" id="footer">
+    <div class="container">
+        <div class="mb-60 qr-code">
+            <div class="qr-code__inner">
+                <div class="media-contain qr-code__img"><img src="img/qr-code.svg" alt="QR – код"></div>
+                <div class="qr-code__content">
+                    <h3>Вы можете совершить благотворительные пожертвования при помощи QR – кода</h3>
+                    <span>Просто отсканируйте его, используя камеру телефона</span>
+                </div>
+            </div>
+        </div>
+        <div class="footer__body">
+            <a href="/" class="footer__logo"><picture><source srcset="img/logo.webp" type="image/webp"><img src="img/logo.png" alt="Благотворительная организация ЗАБОТА"></picture></a>
+            <div class="footer__contacts">
+                <div class="item-contact">
+                    <span>Телефон</span>
+                    <span class="h5"><a href="tel:88312170250">+7 (831) 217-02-50</a></span>
+                </div>
+                <div class="item-contact">
+                    <span>Адрес</span>
+                    <span class="h5">603074, Россия, Н.Новгород, ул.Народная, 22</span>
+                </div>
+                <div class="item-contact">
+                    <span>Почта</span>
+                    <span class="h5"><a href="mailto:office@zabota.nnov.ru">office@zabota.nnov.ru</a></span>
+                </div>
+                <div class="social">
+                    <a href="#">
+                        <svg><use xlink:href="img/icons/sprite.svg#skype"></use></svg>
+                     </a> 
+                     <a href="#">
+                        <svg><use xlink:href="img/icons/sprite.svg#telegram"></use></svg>
+                     </a> 
+                    <a href="#">
+                        <svg><use xlink:href="img/icons/sprite.svg#vk"></use></svg>
+                     </a>      
+                </div>
+            </div>
+        </div>
+        <div class="footer__footer">
+            <p>© 2006-2023 <a href="#" target="_blank">НРБОО "Забота"</a> & <a href="#" target="_blank">Clubhouse Zabota</a></p>
+            <p><a href="#" target="_blank">Политика конфиденциальности</a></p>
+            <noindex>
+                <div class="footer__dev">
+                    <span>Разработка</span>
+                    <a href="https://omniagency.ru/" rel="nofollow" target="_blank">
+                        <svg><use xlink:href="img/icons/sprite.svg#omni"></use></svg>
+                    </a>
+                </div>
+            </noindex>
+        </div>
+    </div>
+</footer>
+        <!--success-modal-->
+<div class="modal success-modal">
+    <div class="modal__overlay">
+        <div class="modal__content">
+            <button class="modal__close" aria-label="Закрыть всплывающее окно">
+                <svg><use xlink:href="img/icons/sprite.svg#icon-close"></use></svg>
+            </button>
+            <picture><source srcset="img/success-bg.webp" type="image/webp"><img src="img/success-bg.png" alt="Заявка отправлена"></picture>
+            <h2>Спасибо!</h2>
+            <p>Заявка отправлена</p>
+        </div>
+    </div>
+</div>
+<!--error-modal-->
+<div class="modal error-modal">
+    <div class="modal__overlay">
+        <div class="modal__content">
+            <button class="modal__close" aria-label="Закрыть всплывающее окно">
+                <svg><use xlink:href="img/icons/sprite.svg#icon-close"></use></svg>
+            </button>
+            <picture><source srcset="img/error-bg.webp" type="image/webp"><img src="img/error-bg.png" alt="Заявка не отправилась"></picture>
+            <h2>Ошибка</h2>
+            <p>Заявка не отправилась, попробуйте снова</p>
+        </div>
+    </div>
+</div>
+    </div>
+    <!--scripts-->
+<script src="js/libs/jquery.min.js"></script>
+<script src="js/libs/inputmask.min.js"></script>
+<script src="js/libs/swiper.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+
+</html>

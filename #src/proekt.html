@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+@@include('_head.html', {   
+    "title": "Робофутбол для особых детей"
+})
+
+<body>
+    <div class="wrap">
+        <!--header-->
+        @@include('_header.html')
+        <!--main-->  
+        <main class="main">
+            @@include('_breadcrumbs-2.html', {
+                "page1": "Наши проекты",
+                "page2": "Робофутбол для особых детей"
+            })
+            <!--page-hero-->
+            <section class="mb-60 page-hero">
+                <div class="container">
+                    <div class="page-hero__inner">
+                        <h1>Робофутбол<br>для особых детей</h1>
+                        <div class="page-hero__preview">
+                            <img src="img/project-1-hero.jpg" alt="Робофутбол для особых детей">
+                        </div>  
+                    </div>   
+                </div>
+            </section>
+            <!--project-about-->
+            <section class="section project-about">
+                <div class="container">
+                    <div class="page-content">
+                        <h3>О проекте</h3>
+                        <p>Содействие становлению гражданского общества конкретной деятельностью, направленной на улучшение качества жизни социально-незащищенных категорий населения. Объединение усилий людей, стремящихся внести свой вклад в развитие системы помощи инвалидам, пенсионерам, несовершеннолетним. Сохранение духовных ценностей, национальных традиций.</p>
+                        <p>Содействие становлению гражданского общества конкретной деятельностью, направленной на улучшение качества жизни социально-незащищенных категорий населения. Объединение усилий людей, стремящихся внести свой вклад в развитие системы помощи инвалидам, пенсионерам, несовершеннолетним. Сохранение духовных ценностей, национальных традиций.</p>
+                    </div>
+                    <aside class="project__share">
+                        <!--share-->
+                        <div class="share">
+                            <p>Поделиться:</p>
+                            <script src="https://yastatic.net/share2/share.js"></script>
+                            <div class="ya-share2" data-curtain data-shape="round" data-services="vkontakte,odnoklassniki,telegram"></div>
+                        </div>
+                    </aside>
+                </div>
+            </section>
+            @@include('_gallery.html')
+            <!--main-news-->
+            <section class="section main-news">
+                <div class="container">
+                    <h3 class="mb-60">Новости проекта</h3>
+                    <div class="main-news__items">
+                        @@include('_item-project2.html')
+                        @@include('_item-project2.html')
+                        @@include('_item-project2.html')
+                        @@include('_item-project2.html')
+                        @@include('_item-project2.html')
+                    </div>
+                </div>
+            </section>
+        </main>
+         <!--footer-->
+        @@include('_footer.html')
+        @@include('_modal.html')
+    </div>
+    @@include('_js.html')
+</body>
+
+</html>

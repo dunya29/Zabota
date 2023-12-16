@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+@@include('_head.html', {   
+    "title": "Наши услуги"
+})
+
+<body>
+    <div class="wrap">
+        <!--header-->
+        @@include('_header.html')
+        <!--main-->  
+        <main class="main">
+            @@include('_breadcrumbs.html', {
+                "page": "Наши услуги"
+            })
+            <!--services-->
+            <section class="section services">
+                <div class="container">
+                    <h1>Наши услуги</h1>
+                    <div class="mb-60 services__top">
+                        <div class="page-content">
+                            <h6>НРБООи "Забота" оказывает услуги разным категориям клиентов: инвалидам, пожилым, малоимущим гражданам, детям - сиротам, подросткам, молодым специалистам, безработным, а также некоммерческим организациям.</h6>                  
+                        </div>
+                        <a href="#feedbackForm" class="btn stroke-btn js-anchor">Оставить заявку</a>
+                    </div>
+                    <div class="services__items">
+                        <div class="item-services">
+                            <img src="img/services-1.svg" alt="">
+                            <div class="item-services__content">
+                                <h5>Обучение детей и молодежи компьютерным технологиям, робототехнике</h5>
+                            </div>
+                        </div>
+                        <div class="item-services">
+                            <img src="img/services-2.svg" alt="">
+                            <div class="item-services__content">
+                                <h5>Психологическое консультирование, подготовка к трудовой деятельности и содействие трудоустройству инвалидов, подростков, безработных граждан</h5>
+                            </div>
+                        </div>
+                        <div class="item-services">
+                            <img src="img/services-3.svg" alt="">
+                            <div class="item-services__content">
+                                <h5>Тренинги личностного и профессионального роста</h5>
+                            </div>
+                        </div>
+                        <div class="item-services">
+                            <img src="img/services-4.svg" alt="">
+                            <div class="item-services__content">
+                                <h5>Практика и стажировка студентов по специальностям:</h5> 
+                                <ul>
+                                 <li>социальная работа</li>
+                                 <li>информационные технологии</li>
+                                 <li>дизайн</li>
+                                 <li>делопроизводитель/секретарь</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="item-services">
+                            <img src="img/services-5.svg" alt="">
+                            <div class="item-services__content">
+                                <h5>Организация и проведение досуговых мероприятий для целевых групп (мастер-классы, презентации, соревнования, выставки, экскурсии, дни рождения, теплоходные прогулки)</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            @@include('_main-form.html')
+        </main>
+         <!--footer-->
+        @@include('_footer.html')
+        @@include('_modal.html')
+    </div>
+    @@include('_js.html')
+</body>
+
+</html>

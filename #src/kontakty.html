@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+@@include('_head.html', {   
+    "title": "Контакты"
+})
+
+<body>
+    <div class="wrap">
+        <!--header-->
+        @@include('_header.html')
+        <!--main-->  
+        <main class="main">
+            @@include('_breadcrumbs.html', {
+                "page": "Контакты"
+            })
+            <!--contacts-->
+            <section class="section contacts">
+                <div class="container">
+                    <h1>Контакты</h1>
+                    <h4 class="mb-60 contacts__subtitle">Нижегородская региональная благотворительная общественная организация «Забота»</h4>
+                    <div class="contacts__inner">
+                        <div class="contacts__content">
+                            <div class="mb-60 item-contact">
+                                <span>Наш адрес</span>
+                                <span class="h5">603074, Россия, Нижний Новгород, ул.Народная, 22.</span>
+                            </div>
+                            <div class="mb-60 item-contact">
+                                <span>Режим работы</span>
+                                <span class="h5">С 8 до 19:00,<br>
+                                    Воскресенье и суббота - выходной</span>
+                            </div>
+                            <div class="mb-60 item-contact">
+                                <span>Телефон</span>
+                                <span class="h5"><a href="tel:88312170250">+7 (831) 217-02-50</a></span>
+                            </div>
+                            <div class="mb-60 item-contact">
+                                <span>Почта</span>
+                                <span class="h5"><a href="mailto:office@zabota.nnov.ru">office@zabota.nnov.ru</a></span>
+                            </div>
+                        </div>
+                        <!--map-->
+                        <div id="map" class="media-cover">
+                            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A95a096f071e43d60b2749a8f37e8d93278a139dde381ee4f2efe03c66ac8f8ae&amp;source=constructor" width="100%" frameborder="0"></iframe>
+                        </div>
+                   </div>
+                </div>
+            </section>
+            @@include('_main-form.html')
+        </main>
+         <!--footer-->
+        @@include('_footer.html')
+        @@include('_modal.html')
+    </div>
+    @@include('_js.html')
+</body>
+
+</html>

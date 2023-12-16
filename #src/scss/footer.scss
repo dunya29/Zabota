@@ -1,0 +1,191 @@
+.footer {
+    padding: 60px 0;
+    width: calc(100% - 40px);
+    margin: 0 auto;
+    border-top-left-radius: 32px;
+    border-top-right-radius: 32px;
+    background: linear-gradient(180deg, #408d9a 0%, #cee2e8 45%, #fefeff 100%);
+    .item-contact {
+        span:first-child {
+            margin-bottom: 8px;
+        }
+    }
+    &__body {
+        display: grid;
+        grid-template-columns: 4fr 8fr;
+        gap: 20px;
+        align-items: start;
+        margin-bottom: 80px;
+    }
+    &__logo {
+        display: block;
+        mix-blend-mode: darken;
+        img {
+            width: 260px;
+            height: 260px;
+            object-fit: contain;
+        }
+    }
+    &__contacts {
+        display: grid;
+        grid-template-columns: 3fr 5fr;
+        gap: 30px;
+    }
+    &__footer {
+        display: grid;
+        grid-template-columns: 4fr 3fr 5fr;
+        align-items: center;
+        gap: 30px;
+        p, a, span {
+            font-size: 16px;
+            color: $gray;
+        }
+    }
+    &__dev {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        svg {
+            flex: 0 0 120px;
+            fill: $gray;
+            width: 120px;
+            height: 40px;
+        }
+    }
+    @media (max-width: $bp1) {
+        width: 100%;
+        &__contacts {
+            grid-template-columns: 4fr 4fr;
+            gap: 30px 20px;
+        }
+        &__footer {
+            grid-template-columns: repeat(3,1fr);
+        }
+    }
+    @media (max-width: $bp2) {
+        &__body {
+            display: block;
+            margin-bottom: 60px;
+        }
+        &__logo {
+            margin-bottom: 32px;
+        }
+        &__footer {
+           display: block;
+           p {
+            margin-bottom: 20px;
+           }
+        }
+        &__dev {
+            justify-content: flex-start;
+        }
+    }
+    @media (max-width: $bp3) {
+        border-radius: 20px;
+    }
+    @media (max-width: $bp4) {
+        padding: 40px 0;
+        &__logo {
+            img {
+                width: 130px;
+                height: 130px;
+            }
+        }
+        &__body {
+            margin-bottom: 45px;
+        }
+        &__contacts {
+            grid-template-columns: 1fr;
+        }
+        &__dev {
+            svg {
+                width: 100px;
+                height: 34px;
+            }
+        }
+    }
+}
+.qr-code {
+    min-height: 342px;
+    padding: 12px 0;
+    border-radius: 32px;
+    background: #FFF;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    &:before, &:after {
+        content: "";
+        display: block;
+        width: 350px;
+        height: 350px;
+        border-radius: 50%;
+        background: rgba(50, 157, 87, 0.50);
+        filter: blur(175px);
+        position: absolute;
+    }
+    &::before {
+        top: 129px;
+        left: -207px;
+    }
+    &::after {
+        bottom: 107px;
+        right: -142px;
+    }
+    h3 {
+        color: $blue;
+        margin-bottom: 20px;
+    }
+    &__inner {
+        display: grid;
+        grid-template-columns: repeat(12,1fr);
+        gap: 30px;
+        align-items: center;
+    }
+    &__img {
+        grid-column: 2/5;
+        padding-top: 100%;
+        img {
+            max-width: 262px;
+        }
+    }
+    &__content {
+        grid-column: 5/12;
+    }
+    @media (max-width: $bp1) {
+        &__inner {
+            gap: 20px;
+        }
+    }
+    @media (max-width: 1150px) {
+        min-height: 0;
+        padding: 40px 0;
+    }
+    @media (max-width: $bp2) {
+        padding: 40px;
+        .media-contain {
+            grid-column: 1/5;
+        }
+        &__content {
+            grid-column: 5/13;
+        }
+    }
+    @media (max-width: $bp3) {
+        padding: 30px;
+        border-radius: 20px;
+    }
+    @media (max-width: $bp4) {
+        .media-contain {
+            grid-column: 4/10;
+        }
+        &__content{
+           grid-column: 1/13;
+        }    
+    }
+    @media (max-width: $bp5) {
+        padding: 30px 20px;
+        &__inner {
+            gap: 20px 0;
+        }
+    }
+}

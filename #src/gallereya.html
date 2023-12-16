@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+@@include('_head.html', {   
+    "title": "Фотогалерея"
+})
+
+<body>
+    <div class="wrap">
+        <!--header-->
+        @@include('_header.html')
+        <!--main-->  
+        <main class="main">
+            @@include('_breadcrumbs.html', {
+                "page": "Фотогалерея"
+            })
+            <!--about-->
+            <section class="section about">
+                <div class="container">
+                    <!--about content-->
+                    <div class="about__content">
+                        <h1 class="mb-60">Фотогалерея</h1>
+                        <section class="mb-60 about__gallery">
+                            <h2>2023</h2>
+                            @@include('_item-gallery.html')
+                            @@include('_item-gallery.html')
+                            @@include('_item-gallery.html')
+                            @@include('_item-gallery.html')
+                            @@include('_item-gallery.html')
+                            @@include('_item-gallery.html')
+                        </section>
+                        <section class="mb-60 about__gallery">
+                            <h2>2022</h2>
+                            @@include('_item-gallery.html')
+                            @@include('_item-gallery.html')
+                            @@include('_item-gallery.html')
+                            @@include('_item-gallery.html')
+                            @@include('_item-gallery.html')
+                            @@include('_item-gallery.html')
+                        </section>
+                        <section class="mb-60 about__gallery">
+                            <h2>2021</h2>
+                            @@include('_item-gallery.html')
+                            @@include('_item-gallery.html')
+                            @@include('_item-gallery.html')
+                            @@include('_item-gallery.html')
+                            @@include('_item-gallery.html')
+                            @@include('_item-gallery.html')
+                        </section>
+                    </div>
+                    <!--about sticky-->
+                    <div class="about__sticky">
+                        <nav>
+                            <span>Об организации</span>
+                            <ul>
+                                <li><a href="#">Миссия и ценности</a></li>
+                                <li><a href="#">Наша история</a></li>
+                                <li><a href="#">Партнеры</a></li>
+                                <li><a href="#">Наши люди</a></li>
+                                <li class="active"><a href="#">Фотогалерея</a></li>
+                                <li><a href="#">Пресса о нас</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </section>
+        </main>
+         <!--footer-->
+        @@include('_footer.html')
+        @@include('_modal.html')
+    </div>
+    @@include('_js.html')
+</body>
+
+</html>

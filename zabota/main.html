@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link type="image/x-icon" rel="shortcut icon" href="img/favicon/favicon.ico">
+    <link type="image/png" sizes="32x32" rel="icon" href="img/favicon/favicon-32x32.png">
+    <link type="image/png" sizes="192x192" rel="icon" href="img/favicon/android-chrome-192x192.png">
+    <link sizes="120x120" rel="apple-touch-icon" href="img/favicon/apple-icon-120x120.png">
+    <link sizes="180x180" rel="apple-touch-icon" href="img/favicon/apple-icon-180x180.png">
+    <meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="preload" href="fonts/FiraSans-Regular.woff2" as="font" type="font/woff2" crossorigin> 
+    <link href="css/style.min.css" type="text/css" rel="stylesheet">
+    <title>Главная</title>
+</head>
+
+<body>
+    <div class="wrap wrap--main">
+        <!--header-->
+        <header class="header">
+    <div class="container">
+        <a href="/" class="header__logo"><picture><source srcset="img/logo.webp" type="image/webp"><img src="img/logo.png" alt="Благотворительная организация ЗАБОТА"></picture></a>
+        <div class="icon-menu">
+            <span class="icon-menu__lbl">Меню</span>
+            <div class="icon-menu__items">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div class="header__menu">
+            <nav class="menu">
+                <ul class="menu__list">
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">
+                            Об организации
+                            <svg>
+                                <use xlink:href="img/icons/sprite.svg#chevron-drop"></use>
+                            </svg>
+                        </a>
+                        <ul class="menu__subnavs">
+                            <li><a href="#">Миссия и ценности</a></li>
+                            <li><a href="#">Наша история</a></li>
+                            <li><a href="#">Партнеры</a></li>
+                            <li><a href="#">Наши люди</a></li>
+                            <li><a href="#">Фотогалерея</a></li>
+                            <li><a href="#">Пресса о нас</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu__item"><a href="#" class="menu__link">Проекты</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link">Услуги</a></li>
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">
+                            Документы                        
+                            <svg>
+                                <use xlink:href="img/icons/sprite.svg#chevron-drop"></use>
+                            </svg>
+                        </a>
+                        <ul class="menu__subnavs">
+                            <li><a href="#">Все документы</a></li>
+                            <li><a href="#">Отчеты</a></li>
+                            <li><a href="#">Файлы</a></li>
+                            <li><a href="#">Благотворительная программа</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu__item"><a href="#" class="menu__link">Новости</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link">Фотогалерея</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+        <a href="#footer" class="btn stroke-btn js-anchor header__btn">Пожертвовать<svg><use xlink:href="img/icons/sprite.svg#heart"></use></svg></a>
+    </div>
+</header>
+        <!--main-->
+        <main class="main">
+            <!--intro-->
+            <section class="section intro">
+                <div class="container">
+                    <div class="intro__inner">
+                        <div class="intro__preview-mob"><div class="media-cover"><picture><source srcset="img/intro-bg.webp" type="image/webp"><img src="img/intro-bg.jpg" alt=""></picture></div></div> 
+                        <div class="intro__left">
+                            <h1>Забота это:</h1>
+                            <div class="intro__content">
+                                <h4>Социальная помощь нуждающимся</h4>
+                                <h4>Благотворительность</h4>
+                                <h4>Образовательные программы для всех возрастов</h4>
+                                <h4>Добровольчество</h4>
+                                <h4>Ресурсная поддержка НКО</h4>
+                            </div>
+                        </div>
+                        <div class="intro__right">
+                            <div class="intro__img"><div class="media-cover"><picture><source srcset="img/intro-bg.webp" type="image/webp"><img src="img/intro-bg.jpg" alt=""></picture></div></div> 
+                            <div class="intro__items">
+                                <div class="item-intro">
+                                    <div class="item-intro__img">
+                                        <div class="media-cover">
+                                            <picture><source srcset="img/intro-1.webp" type="image/webp"><img src="img/intro-1.jpg" alt="Дети и подростки"></picture>
+                                         </div>
+                                    </div>
+                                    <div class="btn"><h5>Дети и подростки</h5></div>
+                                </div>
+                                <div class="item-intro">
+                                    <div class="item-intro__img">
+                                        <div class="media-cover">
+                                           <picture><source srcset="img/intro-bg.webp" type="image/webp"><img src="img/intro-bg.jpg" alt="Молодёжь"></picture>
+                                        </div>
+                                    </div>
+                                    <div class="btn"><h5>Молодёжь</h5></div>
+                                </div>
+                                <div class="item-intro">
+                                    <div class="item-intro__img">
+                                        <div class="media-cover">
+                                            <picture><source srcset="img/intro-1.webp" type="image/webp"><img src="img/intro-1.jpg" alt="Пожилые"></picture>
+                                        </div>
+                                    </div>
+                                    <div class="btn"><h5>Пожилые</h5></div>
+                                </div>
+                                <div class="item-intro">
+                                    <div class="item-intro__img">
+                                        <div class="media-cover">
+                                           <picture><source srcset="img/intro-bg.webp" type="image/webp"><img src="img/intro-bg.jpg" alt="Инвалиды"></picture>
+                                        </div>
+                                    </div>
+                                    <div class="btn"><h5>Инвалиды</h5></div>
+                                </div>
+                                <div class="item-intro">
+                                    <div class="item-intro__img">
+                                        <div class="media-cover">
+                                            <picture><source srcset="img/intro-1.webp" type="image/webp"><img src="img/intro-1.jpg" alt="Специалисты НКО"></picture>
+                                        </div>
+                                    </div>
+                                    <div class="btn"><h5>Специалисты НКО</h5></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper intro__accordion">
+                    <div class="swiper-wrapper container">
+                        <div class="swiper-slide intro-info">
+                            <div class="intro-info__header">
+                                <h6>Клуб цифрового творчества для детей и подростков</h6>
+                                <svg><use xlink:href="img/icons/sprite.svg#chevron-drop"></use></svg>
+                            </div>
+                            <div class="intro-info__content">
+                                <p>В 2005 г. в «Заботе» открыт первый и единственный в России Клуб цифрового творчества, включенный в мировую сеть компьютерных клубов, расположенных в 19 странах мира. Членами клуба являются дети и подростки в возрасте от 6 до 18 лет. Благодаря технической оснащенности Клуба, новым современным технологиям, авторской методике и квалифицированным специалистам НРБОО «Забота» ежегодно успешно реализует проекты, направленные на популяризацию молодежного технического творчества среди детей и подростков г. Нижнего Новгорода и области.</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide intro-info">
+                            <div class="intro-info__header">
+                                <h6>Ресурсный центр по работе со старшим поколением </h6>
+                                <svg><use xlink:href="img/icons/sprite.svg#chevron-drop"></use></svg>
+                            </div>
+                            <div class="intro-info__content">
+                                <p>В 2005 г. в «Заботе» открыт первый и единственный в России Клуб цифрового творчества, включенный в мировую сеть компьютерных клубов, расположенных в 19 странах мира. </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide intro-info">
+                            <div class="intro-info__header">
+                                <h6>Информационно-методический центр для НКО</h6>
+                                <svg><use xlink:href="img/icons/sprite.svg#chevron-drop"></use></svg>
+                            </div>
+                            <div class="intro-info__content">
+                                <p>Членами клуба являются дети и подростки в возрасте от 6 до 18 лет. Благодаря технической оснащенности Клуба, новым современным технологиям, авторской методике и квалифицированным специалистам НРБОО «Забота» ежегодно успешно реализует проекты, направленные на популяризацию молодежного технического творчества среди детей и подростков г. Нижнего Новгорода и области.</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide intro-info">
+                            <div class="intro-info__header">
+                                <h6>Клуб цифрового творчества для детей и подростков</h6>
+                                <svg><use xlink:href="img/icons/sprite.svg#chevron-drop"></use></svg>
+                            </div>
+                            <div class="intro-info__content">
+                                <p>В 2005 г. в «Заботе» открыт первый и единственный в России Клуб цифрового творчества, включенный в мировую сеть компьютерных клубов, расположенных в 19 странах мира. Членами клуба являются дети и подростки в возрасте от 6 до 18 лет. Благодаря технической оснащенности Клуба, новым современным технологиям, авторской методике и квалифицированным специалистам НРБОО «Забота» ежегодно успешно реализует проекты, направленные на популяризацию молодежного технического творчества среди детей и подростков г. Нижнего Новгорода и области.</p>
+                            </div>
+                        </div> 
+                        <div class="swiper-slide intro-info">
+                            <div class="intro-info__header">
+                                <h6>Стажировка, практика, рабочие места</h6>
+                                <svg><use xlink:href="img/icons/sprite.svg#chevron-drop"></use></svg>
+                            </div>
+                            <div class="intro-info__content">
+                                <p>в «Заботе» открыт первый и единственный в России Клуб цифрового творчества, включенный в мировую сеть компьютерных клубов, расположенных в 19 странах мира. Членами клуба являются дети и подростки в возрасте от 6 до 18 лет. Благодаря технической оснащенности Клуба, новым современным технологиям, авторской методике и квалифицированным специалистам НРБОО «Забота» ежегодно успешно реализует проекты</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--main-projects-->
+            <section class="section main-projects">
+                <div class="container">
+                    <h2 class="mb-60">Наши проекты</h2>
+                    <div class="mb-60 main-projects__items">
+                        <div class="main-projects__item">
+                            <a href="#" class="media-cover"><picture><source srcset="img/main-project-1.webp" type="image/webp"><img src="img/main-project-1.jpg" alt="Лаборатория социального творчества"></picture></a>
+                            <h5><a href="#">Лаборатория социального творчества</a></h5>
+                        </div>
+                        <div class="main-projects__item">
+                            <a href="#" class="media-cover"><picture><source srcset="img/main-project-2.webp" type="image/webp"><img src="img/main-project-2.jpg" alt="Клубный интерес"></picture></a>
+                            <h5><a href="#">Клубный интерес (профориентация детей и подростков через клубную деятельность)</a></h5>
+                        </div>
+                        <div class="main-projects__item">
+                            <a href="#" class="media-cover"><picture><source srcset="img/main-project-3.webp" type="image/webp"><img src="img/main-project-3.jpg" alt="Лаборатория социального творчества"></picture></a>
+                            <h5><a href="#">Лаборатория социального творчества</a></h5>
+                        </div>
+                        <div class="main-projects__item">
+                            <a href="#" class="media-cover"><picture><source srcset="img/main-project-4.webp" type="image/webp"><img src="img/main-project-4.jpg" alt="Тур добрых дел"></picture></a>
+                            <h5><a href="#">Тур добрых дел</a></h5>
+                        </div>
+                        <div class="main-projects__item">
+                            <a href="#" class="media-cover"><picture><source srcset="img/main-project-5.webp" type="image/webp"><img src="img/main-project-5.jpg" alt="И стар, и млад — в добровольческий отряд"></picture></a>
+                            <h5><a href="#">И стар, и млад — в добровольческий отряд</a></h5>
+                        </div>
+                        <div class="main-projects__item">
+                            <a href="#" class="media-cover"><picture><source srcset="img/main-project-6.webp" type="image/webp"><img src="img/main-project-6.jpg" alt="Традиции добрых отношений"></picture></a>
+                            <h5><a href="#">Традиции добрых отношений</a></h5>
+                        </div>
+                    </div>
+                    <a href="#" class="btn stroke-btn">Все проекты<svg><use xlink:href="img/icons/sprite.svg#arrow-l"></use></svg></a>
+                </div>
+            </section>
+            <!--main-stat-->
+            <section class="section stat">
+                <div class="container">
+                    <h2 class="mb-60">Благотворительной деятельностью организации ежегодно охватывается <span>более 5 тыс. человек</span></h2>
+                    <div class="mb-60 stat__cols">
+                        <div class="stat__col">
+                            <h5>Наша миссия</h5>
+                            <p>Cодействие становлению гражданского общества конкретной деятельностью, направленной на улучшение качества жизни социально-незащищенных категорий населения.</p>
+                        </div>
+                        <div class="stat__col">
+                            <h5>Задача</h5>
+                            <p>Объединение усилий людей, стремящихся внести свой вклад в развитие системы помощи инвалидам, пенсионерам, несовершеннолетним. Сохранение духовных ценностей, национальных традиций.</p>
+                        </div>
+                    </div>
+                    <div class="stat__body">
+                        <div class="stat__info">
+                            <div class="mb-60 stat__items">
+                                <div class="item-stat">
+                                    <span class="h2">27 лет</span>
+                                    <h6>Нашей организации</h6>
+                                </div>
+                                <div class="item-stat">
+                                    <span class="h2">Более 100</span>
+                                    <h6>Реализовано проектов</h6>
+                                </div>
+                                <div class="item-stat">
+                                    <span class="h2">Более 5000</span>
+                                    <h6>Волонтеров</h6>
+                                </div>
+                            </div>
+                            <a href="#" class="btn stroke-btn">Подробнее о нас<svg><use xlink:href="img/icons/sprite.svg#arrow-l"></use></svg></a>
+                        </div>
+                        <div class="stat__images">
+                            <div class="stat__image">
+                                <div class="media-cover">
+                                      <picture><source srcset="img/stat-bg1.webp" type="image/webp"><img src="img/stat-bg1.jpg" alt=""></picture>
+                                  </div>
+                            </div>
+                            <div class="stat__image">
+                                <div class="media-cover"><picture><source srcset="img/stat-bg2.webp" type="image/webp"><img src="img/stat-bg2.jpg" alt=""></picture></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--main-news-->
+            <section class="section news main-news">
+                <div class="container">
+                    <h2 class="mb-60">Главное в этом месяце</h2>
+                    <!--news__items-->
+                    <div class="mb-60 news__items">
+                        <!--item-news-->
+<article class="item-news">
+    <a href="#" class="media-cover"><picture><source srcset="img/news-1.webp" type="image/webp"><img src="img/news-1.jpg" alt="Робофутбол для особых детей"></picture></a>
+    <div class="item-news__content">
+        <div class="item-news__tags">
+            <span>Робофутбол для особых детей</span>
+        </div>
+        <span class="item-news__date">21.04.2023</span>
+        <h5>«Зимний хакатон» - играют роботы и дети</h5>
+        <a href="#" class="btn main-link">Читать<svg><use xlink:href="img/icons/sprite.svg#arrow-sm"></use></svg></a>
+    </div>
+</article>
+                        <!--item-news-->
+<article class="item-news">
+    <a href="#" class="media-cover"><picture><source srcset="img/news-2.webp" type="image/webp"><img src="img/news-2.jpg" alt="Серебряный круг"></picture></a>
+    <div class="item-news__content">
+        <div class="item-news__tags">
+            <span>Серебряный круг</span>
+        </div>
+        <span class="item-news__date">21.04.2023</span>
+        <h5>Региональный конкурс «Серебряный наставник» открывает двери для старшего поколения</h5>
+        <a href="#" class="btn main-link">Читать<svg><use xlink:href="img/icons/sprite.svg#arrow-sm"></use></svg></a>
+    </div>
+</article>
+                        <!--item-news-->
+<article class="item-news">
+    <a href="#" class="media-cover"><picture><source srcset="img/news-3.webp" type="image/webp"><img src="img/news-3.jpg" alt="И стар, и млад - в добровольческий отряд!"></picture></a>
+    <div class="item-news__content">
+        <div class="item-news__tags">
+            <span>И стар, и млад - в добровольческий отряд!</span>
+        </div>
+        <span class="item-news__date">21.04.2023</span>
+        <h5>«Зимний хакатон» - играют роботы и дети</h5>
+        <a href="#" class="btn main-link">Читать<svg><use xlink:href="img/icons/sprite.svg#arrow-sm"></use></svg></a>
+    </div>
+</article>
+                        <!--item-news-->
+<article class="item-news">
+    <a href="#" class="media-cover"><picture><source srcset="img/news-1.webp" type="image/webp"><img src="img/news-1.jpg" alt="Робофутбол для особых детей"></picture></a>
+    <div class="item-news__content">
+        <div class="item-news__tags">
+            <span>Робофутбол для особых детей</span>
+        </div>
+        <span class="item-news__date">21.04.2023</span>
+        <h5>«Зимний хакатон» - играют роботы и дети</h5>
+        <a href="#" class="btn main-link">Читать<svg><use xlink:href="img/icons/sprite.svg#arrow-sm"></use></svg></a>
+    </div>
+</article>
+                        <!--item-news-->
+<article class="item-news">
+    <a href="#" class="media-cover"><picture><source srcset="img/news-2.webp" type="image/webp"><img src="img/news-2.jpg" alt="Серебряный круг"></picture></a>
+    <div class="item-news__content">
+        <div class="item-news__tags">
+            <span>Серебряный круг</span>
+        </div>
+        <span class="item-news__date">21.04.2023</span>
+        <h5>Региональный конкурс «Серебряный наставник» открывает двери для старшего поколения</h5>
+        <a href="#" class="btn main-link">Читать<svg><use xlink:href="img/icons/sprite.svg#arrow-sm"></use></svg></a>
+    </div>
+</article>
+                        <!--item-news-->
+<article class="item-news">
+    <a href="#" class="media-cover"><picture><source srcset="img/news-3.webp" type="image/webp"><img src="img/news-3.jpg" alt="И стар, и млад - в добровольческий отряд!"></picture></a>
+    <div class="item-news__content">
+        <div class="item-news__tags">
+            <span>И стар, и млад - в добровольческий отряд!</span>
+        </div>
+        <span class="item-news__date">21.04.2023</span>
+        <h5>«Зимний хакатон» - играют роботы и дети</h5>
+        <a href="#" class="btn main-link">Читать<svg><use xlink:href="img/icons/sprite.svg#arrow-sm"></use></svg></a>
+    </div>
+</article>
+                    </div>
+                    <a href="#" class="btn stroke-btn">Все новости<svg><use xlink:href="img/icons/sprite.svg#arrow-l"></use></svg></a>
+                </div>
+            </section>
+            <!--main-docs-->
+            <section class="section docs main-docs">
+                <div class="container">
+                    <h2 class="mb-60">Прозрачны в своей деятельности</h2>
+                    <div class="mb-60 docs__items">
+                        <a target="_blank" href="#" class="item-docs">
+                            <h5>Устав НРБОО Забота</h5>
+                            <span>Pdf</span>
+                            <div class="btn main-link">Открыть<svg><use xlink:href="img/icons/sprite.svg#arrow-sm"></use></svg></div>
+                        </a>
+                        <a target="_blank" href="#" class="item-docs">
+                            <h5>Свидетельство ИНН</h5>
+                            <span>Pdf</span>
+                            <div class="btn main-link">Открыть<svg><use xlink:href="img/icons/sprite.svg#arrow-sm"></use></svg></div>
+                        </a>
+                        <a target="_blank" href="#" class="item-docs">
+                            <h5>Свидетельство МинЮст</h5>
+                            <span>Pdf</span>
+                            <div class="btn main-link">Открыть<svg><use xlink:href="img/icons/sprite.svg#arrow-sm"></use></svg></div>
+                        </a>
+                        <a target="_blank" href="#" class="item-docs">
+                            <h5>Свидетельство ОГРН</h5>
+                            <span>Pdf</span>
+                            <div class="btn main-link">Открыть<svg><use xlink:href="img/icons/sprite.svg#arrow-sm"></use></svg></div>
+                        </a>
+                        <a target="_blank" href="#" class="item-docs">
+                            <h5>Устав НРБОО Забота</h5>
+                            <span>Pdf</span>
+                            <div class="btn main-link">Открыть<svg><use xlink:href="img/icons/sprite.svg#arrow-sm"></use></svg></div>
+                        </a>
+                        <a target="_blank" href="#" class="item-docs">
+                            <h5>Свидетельство ИНН</h5>
+                            <span>Pdf</span>
+                            <div class="btn main-link">Открыть<svg><use xlink:href="img/icons/sprite.svg#arrow-sm"></use></svg></div>
+                        </a>
+                    </div>
+                    <a href="#" class="btn stroke-btn">Все документы<svg><use xlink:href="img/icons/sprite.svg#arrow-l"></use></svg></a>
+                </div>
+            </section>
+        </main>
+        <!--footer-->
+        <footer class="footer" id="footer">
+    <div class="container">
+        <div class="mb-60 qr-code">
+            <div class="qr-code__inner">
+                <div class="media-contain qr-code__img"><img src="img/qr-code.svg" alt="QR – код"></div>
+                <div class="qr-code__content">
+                    <h3>Вы можете совершить благотворительные пожертвования при помощи QR – кода</h3>
+                    <span>Просто отсканируйте его, используя камеру телефона</span>
+                </div>
+            </div>
+        </div>
+        <div class="footer__body">
+            <a href="/" class="footer__logo"><picture><source srcset="img/logo.webp" type="image/webp"><img src="img/logo.png" alt="Благотворительная организация ЗАБОТА"></picture></a>
+            <div class="footer__contacts">
+                <div class="item-contact">
+                    <span>Телефон</span>
+                    <span class="h5"><a href="tel:88312170250">+7 (831) 217-02-50</a></span>
+                </div>
+                <div class="item-contact">
+                    <span>Адрес</span>
+                    <span class="h5">603074, Россия, Н.Новгород, ул.Народная, 22</span>
+                </div>
+                <div class="item-contact">
+                    <span>Почта</span>
+                    <span class="h5"><a href="mailto:office@zabota.nnov.ru">office@zabota.nnov.ru</a></span>
+                </div>
+                <div class="social">
+                    <a href="#">
+                        <svg><use xlink:href="img/icons/sprite.svg#skype"></use></svg>
+                     </a> 
+                     <a href="#">
+                        <svg><use xlink:href="img/icons/sprite.svg#telegram"></use></svg>
+                     </a> 
+                    <a href="#">
+                        <svg><use xlink:href="img/icons/sprite.svg#vk"></use></svg>
+                     </a>      
+                </div>
+            </div>
+        </div>
+        <div class="footer__footer">
+            <p>© 2006-2023 <a href="#" target="_blank">НРБОО "Забота"</a> & <a href="#" target="_blank">Clubhouse Zabota</a></p>
+            <p><a href="#" target="_blank">Политика конфиденциальности</a></p>
+            <noindex>
+                <div class="footer__dev">
+                    <span>Разработка</span>
+                    <a href="https://omniagency.ru/" rel="nofollow" target="_blank">
+                        <svg><use xlink:href="img/icons/sprite.svg#omni"></use></svg>
+                    </a>
+                </div>
+            </noindex>
+        </div>
+    </div>
+</footer>
+        <!--success-modal-->
+<div class="modal success-modal">
+    <div class="modal__overlay">
+        <div class="modal__content">
+            <button class="modal__close" aria-label="Закрыть всплывающее окно">
+                <svg><use xlink:href="img/icons/sprite.svg#icon-close"></use></svg>
+            </button>
+            <picture><source srcset="img/success-bg.webp" type="image/webp"><img src="img/success-bg.png" alt="Заявка отправлена"></picture>
+            <h2>Спасибо!</h2>
+            <p>Заявка отправлена</p>
+        </div>
+    </div>
+</div>
+<!--error-modal-->
+<div class="modal error-modal">
+    <div class="modal__overlay">
+        <div class="modal__content">
+            <button class="modal__close" aria-label="Закрыть всплывающее окно">
+                <svg><use xlink:href="img/icons/sprite.svg#icon-close"></use></svg>
+            </button>
+            <picture><source srcset="img/error-bg.webp" type="image/webp"><img src="img/error-bg.png" alt="Заявка не отправилась"></picture>
+            <h2>Ошибка</h2>
+            <p>Заявка не отправилась, попробуйте снова</p>
+        </div>
+    </div>
+</div>
+    </div>
+    <!--scripts-->
+<script src="js/libs/jquery.min.js"></script>
+<script src="js/libs/inputmask.min.js"></script>
+<script src="js/libs/swiper.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+
+</html>

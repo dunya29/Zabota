@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+@@include('_head.html', {   
+    "title": "Наши проекты"
+})
+
+<body>
+    <div class="wrap">
+        <!--header-->
+        @@include('_header.html')
+        <!--main-->  
+        <main class="main">
+            @@include('_breadcrumbs.html', {
+                "page": "Наши проекты"
+            })
+            <!--projects-->
+            <section class="section projects">
+                <div class="container">
+                    <h1 class="mb-60">Наши проекты</h1>
+                    <div class="projects__items">
+                        @@include('_item-project.html')
+                        @@include('_item-project.html')
+                        @@include('_item-project.html')
+                        @@include('_item-project.html')
+                        @@include('_item-project.html')
+                        @@include('_item-project.html')
+                    </div>  
+                </div>
+            </section>
+        </main>
+         <!--footer-->
+        @@include('_footer.html')
+        @@include('_modal.html')
+    </div>
+    @@include('_js.html')
+</body>
+
+</html>

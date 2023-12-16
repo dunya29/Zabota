@@ -1,0 +1,197 @@
+.item-news {
+    display: flex;
+    flex-direction: column;
+    h5 {
+        margin-bottom: 20px;
+    }
+    .media-cover {
+        padding-top: 69.44%;
+        border-radius: 16px;
+        margin-bottom: 32px;
+        img {
+            transition: all .6s ease-in-out;
+        }
+        &:hover {
+            img {
+                transform: scale(1.05);
+            }
+        }
+    }
+    .main-link {
+        margin-top: auto;
+    }
+    &__content {
+        flex: 1 1 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    &__tags {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        margin: 0 -4px 6px;
+        span {
+            display: block;
+            font-size: 18px;
+            color: $blue;
+            padding: 6px 16px;
+            background-color: $light-blue;
+            border-radius: 4px;
+            margin: 0 4px 10px;
+        }
+    }
+    &__date {
+        display: inline-block;
+        margin-bottom: 8px;
+    }
+    @media (max-width: $bp1) {
+        .media-cover {
+            margin-bottom: 20px;
+        }
+        &__tags {
+            min-height: 76px;
+            margin-bottom: 0;
+            span {
+                font-size: 16px;
+                padding: 4px 8px;
+            }
+        }
+    }
+    @media (max-width: $bp4) {
+        &__tags {
+            min-height: 0;
+        }
+    }
+    @media (min-width: $bp5) and (max-width: $bp4) {
+        .media-cover {
+            padding-top: 0;
+            height: 300px;
+        }
+    }
+}
+.news {
+    &__top {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        .tabs {
+            margin-bottom: 0;
+        }
+    }
+    &__lbl {
+        display: block;
+        line-height: 55px;
+        margin: 0 20px 17px 0;
+        white-space: nowrap;
+    }
+    &__form {
+        display: flex;
+        align-items: center;
+        margin: 0 20px 15px 0;
+        .select-custom {
+            flex: 0 0 380px;
+            width: 380px;
+            margin-bottom: 17px;
+        }
+    }
+    &__tabs {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-bottom: 15px;
+    }
+    &__items {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 32px;
+    }
+    @media (max-width: $bp1) {
+        &__lbl {
+            line-height: 48px;
+            margin-bottom: 10px;
+        }
+        &__items {
+            gap: 32px 20px;
+        }
+        &__form {
+            margin-bottom: 22px;
+            .select-custom {
+                flex: 0 0 320px;
+                width: 320px;
+                margin-bottom: 10px;
+            }
+        }
+        &__tabs {
+            margin-bottom: 22px;
+        }
+    }
+    @media (max-width: $bp2) {
+        &__items {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+    @media (max-width: $bp3) {
+        &__lbl {
+            line-height: 1.2;
+            flex: 1 1 100%;
+            margin-bottom: 16px;
+        }
+        &__form {
+            display: block;
+            width: 100%;
+            margin: 0 0 10px;
+        }
+    }
+    @media (max-width: $bp4) {
+        &__form {
+            .select-custom {
+                flex: 1 1 100%;
+                width: 100%;
+            }
+        }
+        &__tabs {
+            a {
+                flex: 1 1 100%;
+                max-width: 320px;
+            }
+        }
+        &__items {
+            grid-template-columns: 1fr;
+        }
+    }
+}
+.article {
+    .container {
+        max-width: 926px;
+    }
+    h1 {
+        font-weight: 400;
+        color: $maincolor;
+        margin-bottom: 20px;
+    }
+    &__img {
+        border-radius: 32px;
+        margin-bottom: 32px;
+        overflow: hidden;
+    }
+    @media (max-width: $bp3) {
+        &__img {
+            border-radius: 16px;
+        }
+    }
+    @media (max-width: $bp5) {
+        &__img {
+            margin: 0 -20px 32px;
+            border-radius: 0;
+        }
+    }
+    @media (max-width: $bp6) {
+        &__img {
+            margin: 0 -10px 32px;
+        }
+    }
+}
+
+

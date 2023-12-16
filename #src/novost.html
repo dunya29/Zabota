@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+@@include('_head.html', {   
+    "title": '"Зимний хакатон" - играют роботы и дети'
+})
+
+<body>
+    <div class="wrap">
+        <!--header-->
+        @@include('_header.html')
+        <!--main-->  
+        <main class="main">
+            @@include('_breadcrumbs-2.html', {
+                "page1": "Новости",
+                "page2": '"Зимний хакатон" - играют роботы и дети'
+            })
+            <!--article-->
+            <section class="section article">
+                <div class="container">
+                    <div class="article__img">
+                        <picture>
+                            <source srcset="img/news.webp" media="(min-width: 480.99px)" type="image/webp">
+                            <source srcset="img/news.jpg" media="(min-width: 480.99px)">
+                            <source srcset="img/news-mob.webp" type="image/webp">
+                            <source srcset="img/news-mob.jpg">
+                            <img src="img/news.jpg" alt='"Зимний хакатон" - играют роботы и дети'>
+                        </picture>
+                    </div>
+                    <h1 class="h3">"Зимний хакатон" - играют роботы и дети</h1>
+                    <!--page-content-->
+                    <div class="page-content">
+                        <p>Содействие становлению гражданского общества конкретной деятельностью, направленной на улучшение качества жизни социально-незащищенных категорий населения. Объединение усилий людей, стремящихся внести свой вклад в развитие системы помощи инвалидам, пенсионерам, несовершеннолетним. Сохранение духовных ценностей, национальных традиций.</p>
+                        <p>Содействие становлению гражданского общества конкретной деятельностью, направленной на улучшение качества жизни социально-незащищенных категорий населения. Объединение усилий людей, стремящихся внести свой вклад в развитие системы помощи инвалидам, пенсионерам, несовершеннолетним. Сохранение духовных ценностей, национальных традиций.</p>
+                    </div>
+                    <!--share-->
+                    <div class="share">
+                        <p>Поделиться:</p>
+                        <script src="https://yastatic.net/share2/share.js"></script>
+                        <div class="ya-share2" data-curtain data-shape="round" data-services="vkontakte,odnoklassniki,telegram"></div>
+                    </div>
+                </div>
+            </section>
+            @@include('_gallery.html')
+        </main>
+         <!--footer-->
+        @@include('_footer.html')
+        @@include('_modal.html')
+    </div>
+    @@include('_js.html')
+</body>
+
+</html>

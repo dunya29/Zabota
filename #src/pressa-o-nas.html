@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+@@include('_head.html', {   
+    "title": "Пресса о нас"
+})
+
+<body>
+    <div class="wrap">
+        <!--header-->
+        @@include('_header.html')
+        <!--main-->  
+        <main class="main">
+            @@include('_breadcrumbs.html', {
+                "page": "Пресса о нас"
+            })
+            <!--about-->
+            <section class="section about">
+                <div class="container">
+                    <!--about content-->
+                    <div class="about__content">
+                        <h1 class="mb-60">Пресса о нас</h1>
+                        <div class="about__media">
+                            @@include("_item-media.html")
+                            @@include("_item-media.html")
+                        </div>
+                    </div>
+                    <!--about sticky-->
+                    <div class="about__sticky">
+                        <nav>
+                            <span>Об организации</span>
+                            <ul>
+                                <li><a href="#">Миссия и ценности</a></li>
+                                <li><a href="#">Наша история</a></li>
+                                <li><a href="#">Партнеры</a></li>
+                                <li><a href="#">Наши люди</a></li>
+                                <li><a href="#">Фотогалерея</a></li>
+                                <li class="active"><a href="#">Пресса о нас</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </section>
+        </main>
+         <!--footer-->
+        @@include('_footer.html')
+        @@include('_modal.html')
+    </div>
+    @@include('_js.html')
+</body>
+
+</html>

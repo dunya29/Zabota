@@ -1,0 +1,35 @@
+<!--main-form-->
+<section class="section main-form" id="feedbackForm">
+    <div class="container">
+        <div class="main-form__inner">
+            <div class="main-form__left">
+                <h2>Оставьте заявку</h2>
+                <h6>Мы свяжемся с вами и обсудим все вопросы</h6>
+                <div class="main-form__img"><img src="img/form-bg.png" alt=""></div>
+            </div>
+            <form action="" class="form" onsubmit="event.preventDefault();formSuccess(this)">
+                <div class="form__grid">
+                    <div class="item-form">
+                        <input type="text" placeholder="Имя" name="name">
+                        <div class="item-form__error"></div>
+                    </div>
+                    <div class="item-form">
+                        <input type="tel" placeholder="Телефон" name="phone">
+                        <div class="item-form__error"></div>
+                    </div>
+                </div>
+                <div class="item-form">
+                    <input type="text" placeholder="Почта" name="email">
+                    <div class="item-form__error"></div>
+                </div>
+                <div class="item-form">
+                    <textarea placeholder="Комментарий" name="message" maxlength="3000" oninput="this.style.height = this.style.height = this.scrollHeight + 'px'"></textarea>
+                </div>
+                <div class="form__footer">
+                    <button type="submit" class="btn main-btn">Оставить заявку</button>
+                    <p class="form__txt">Нажимая на кнопку вы соглашаетесь<br>на <a href="#" target="_blank">обработку персональных данных</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
