@@ -51,13 +51,6 @@ let popups = {
       disableScroll()
     }
     popup.classList.add("open")
-    allPopups.forEach(pop => {
-      pop.addEventListener("click", e => {
-        if (!pop.querySelector(".modal__content").contains(e.target) || pop.querySelector(".modal__close").contains(e.target)) {
-          this.closePopup(pop)
-        }
-      })
-    })
   },
   closePopup: function (popup) {
     popup.classList.remove("open")
@@ -68,6 +61,13 @@ let popups = {
     }, animSpd);
   }
 }
+allPopups.forEach(pop => {
+  pop.addEventListener("click", e => {
+    if (!pop.querySelector(".modal__content").contains(e.target) || pop.querySelector(".modal__close").contains(e.target)) {
+      popups.closePopup(pop)
+    }
+  })
+})
 //form onsubmit
 function formSuccess(form) {
   form.querySelectorAll(".item-form").forEach(item => item.classList.remove("error"))

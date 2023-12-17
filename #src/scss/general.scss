@@ -725,13 +725,17 @@ h6, .h6, p, ul li, ol li {
   }
   &__error {
     display: none;
-    font-size: 14px;
-    font-weight: 500;
+    font-size: 16px;
     color: $red;
     margin-top: 4px;
   }
   @media (max-width: $bp1) {
     margin-bottom: 15px;
+  }
+  @media (max-width: $bp4) {
+    &__error {
+      font-size: 14px;
+    }
   }
 }
 .item-checkbox {

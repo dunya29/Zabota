@@ -125,12 +125,14 @@
         position: absolute;
     }
     &::before {
-        top: 129px;
-        left: -207px;
+        top: 0;
+        left: 0;
+        transform: translate(-207px,129px);
     }
     &::after {
-        bottom: 107px;
-        right: -142px;
+        bottom: 0;
+        right: 0;
+        transform: translate(142px,-107px);
     }
     h3 {
         color: $blue;
@@ -175,6 +177,12 @@
         border-radius: 20px;
     }
     @media (max-width: $bp4) {
+        &::before {
+            transform: translate(-70%,70%);
+        }
+        &::after {
+            transform: translate(70%,-70%);
+        }
         .media-contain {
             grid-column: 4/10;
         }
