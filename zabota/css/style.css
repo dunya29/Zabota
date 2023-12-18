@@ -1415,8 +1415,6 @@ ol li {
   -ms-flex: 0 0 130px;
   flex: 0 0 130px;
   mix-blend-mode: darken;
-  position: relative;
-  z-index: 501;
 }
 
 .header__logo img {
@@ -3328,6 +3326,17 @@ ol li {
   }
 }
 
+@media (max-width: 1600px) {
+  .notfound__img {
+    max-width: 560px;
+  }
+
+  .fancy-modal .swiper {
+    width: 753px;
+    height: 650px;
+  }
+}
+
 @media (max-width: 1300.98px) {
   h1,
   .h1,
@@ -3713,8 +3722,8 @@ ol li {
   }
 
   .fancy-modal .swiper {
-    width: 837px;
-    height: 723px;
+    width: 660px;
+    height: 630px;
   }
 
   .footer {
@@ -3918,6 +3927,11 @@ ol li {
 
   .header__btn {
     margin: 0 32px;
+  }
+
+  .header__logo {
+    position: relative;
+    z-index: 501;
   }
 
   .header__menu {
@@ -4574,7 +4588,7 @@ ol li {
 
   .fancy-modal .swiper {
     width: calc(100% - 60px);
-    height: 100%;
+    height: calc(100% - 60px);
   }
 
   .footer {

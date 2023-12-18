@@ -179,11 +179,8 @@ if (newsFilter) {
     setSelect.setSelectTxt()
   })
   newsFilter.addEventListener("reset", ()=> {
-    select.querySelectorAll(".item-checkbox input").forEach(item => {
-      item.removeAttribute("checked")
-      setSelect.checkedInpMass = []
-      setSelect.setSelectTxt()
-    })
+    setSelect.allInp.checked = true
+    setSelect.setSelectTxt()
   })
 }
 //checked options

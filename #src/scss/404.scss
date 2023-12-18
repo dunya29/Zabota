@@ -16,6 +16,11 @@
     &__img {
         max-width: 967px;
     }
+    @media (max-width: 1600px) {
+        &__img {
+            max-width: 560px;
+        }
+    }
     @media (max-width: $bp1) {
         .btn {
             max-width: 320px;

@@ -8,8 +8,6 @@
     &__logo {
         flex: 0 0 130px;
         mix-blend-mode: darken;
-        position: relative;
-        z-index: 501;
         img {
             width: 130px;
             height: 130px;
@@ -33,6 +31,10 @@
     @media (max-width: $bp2) {
         &__btn {
             margin: 0 32px;
+        }
+        &__logo {
+            position: relative;
+            z-index: 501;
         }
         &__menu {
             position: fixed;
