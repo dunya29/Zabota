@@ -226,9 +226,12 @@
         max-width: none;
         border-radius: 0;
         transform: translateY(0);
+        img {
+            margin-bottom: 0;
+        }
     }
     .swiper {
-        width: 1060px;
+        width: 1053px;
         height: 790px;
         margin: 0 auto;
         overflow: visible;
@@ -260,14 +263,8 @@
     }
     @media (max-width: 1600px) { 
         .swiper {
-           width: 753px;
-           height: 650px;
-        }
-    }
-    @media (max-width: $bp1) {
-        .swiper {
-            width: 660px;
-            height: 630px;
+           width: 760px;
+           height: 570px;
         }
     }
     @media (max-width: $bp2) {
@@ -276,7 +273,8 @@
         }
         .swiper {
             width: 600px;
-            height: 570px;
+            height: 100%;
+            max-height: 600px;
         }
         .modal__btns {
             display: none;
@@ -285,7 +283,6 @@
     @media (max-width: $bp3) {
         .swiper {
             width: calc(100% - 60px);
-            height: calc(100% - 60px);
         }
     }
     @media (max-width: $bp6) {

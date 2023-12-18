@@ -268,7 +268,7 @@ fancyItems.forEach(item => {
         nextEl: ".fancy-modal .swiper-btn--next"
       },
       breakpoints: {
-        1300.98: {
+        1599.98: {
           spaceBetween: 60,
         },
         991.98: {
